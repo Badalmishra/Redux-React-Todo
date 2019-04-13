@@ -1,0 +1,73 @@
+:root {
+    --main-color:rgb(60, 199, 101);
+    --secondary-color:rgb(98, 202, 145);
+    --border: 1px solid darkslategray;
+    --main-paiding:10px;
+}
+  
+body{
+    background: sandybrown;
+}
+.logo{
+    font-family: cursive;
+    color: var(--main-color);
+    font-size: 32px;
+    width: 10%; 
+}
+.main{
+    background: white;
+    width:50%;
+    margin: auto;
+    margin-top:5rem;
+    border: var(--border);
+    padding: var(--main-paiding);
+    border-radius: 4px;
+}
+.form  *{
+    width: 100%; 
+} 
+.form input, .form button{
+    box-sizing: border-box;
+    padding: var(--main-paiding);
+}
+.form button{
+    border: var(--border);
+    background: var(--main-color);
+}
+.form button:active{
+    background: var(--secondary-color);
+}
+
+.list{
+
+    padding: 0px;
+
+}
+.list h2{
+    color:yellowgreen;
+    font-family: cursive;
+    padding: 10px;
+}
+.list-item{
+    padding: var(--main-paiding);
+    border: var(--border);
+    box-sizing: border-box;
+    list-style: none;
+    transition: background .2s; 
+    text-transform: capitalize;
+    
+}
+.list-item:hover{
+    background: var(--secondary-color);
+    cursor: pointer;
+}
+.dead, .dead:hover{
+    background: darkslategray;  
+    transition: background .5s,color .5s; 
+    color:white;
+}
+@media screen and (min-width: 1200) {
+    body {
+    background-color: lightgreen;
+    }
+}
